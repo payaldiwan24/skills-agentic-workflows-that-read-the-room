@@ -10,7 +10,7 @@ engine:
   id: copilot
   copilot-sdk: true
 tools:
-  bash: false
+  bash: true
   cli-proxy: false
   edit:
   github:
