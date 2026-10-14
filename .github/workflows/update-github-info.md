@@ -21,6 +21,7 @@ network:
     - defaults
     - github.blog
     - github.com
+    - awesome-copilot.github.com
 safe-outputs:
   create-pull-request:
     title-prefix: "[GitHub Info] "
@@ -34,12 +35,13 @@ safe-outputs:
 
 Read `notes/mona-notes.md` and the current `site/content/github-info.md` before making any changes.
 
-Use the `web-fetch` tool to fetch both:
+Use the `web-fetch` tool to fetch these sources:
 
 - https://github.blog/latest/
 - https://github.blog/changelog/
+- https://awesome-copilot.github.com/workflows/
 
-Find recent developments that would make useful, practical guidance for developers learning GitHub. Keep updates short, accurate, and consistent with Mona's editorial angle. Include a clear source link for every item based on the GitHub Blog or Changelog; do not add claims that the fetched sources do not support.
+Find recent developments and useful workflows that would make practical guidance for developers learning GitHub. Use Awesome Copilot workflows as an additional source of workflow inspiration, distinguishing examples from official GitHub announcements. Keep updates short, accurate, and consistent with Mona's editorial angle. Include a clear source link for every item, and do not add claims that the fetched sources do not support.
 
 Use the GitHub repository API tools to read repository guidance or reference files when needed. Do not use the terminal, GitHub CLI, or sandboxed shell commands to read those files.
 
