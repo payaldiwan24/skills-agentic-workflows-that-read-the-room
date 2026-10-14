@@ -75,7 +75,7 @@ Load these files from `github/gh-aw` (they are not available locally).
 - `.github/aw/serena-tool.md`
 - `.github/aw/shared-safe-jobs.md`
 - `.github/aw/skills.md`
-- `.github/aw/subagents.md`
+- `.github/aw/sub.md`
 - `.github/aw/syntax-agentic.md`
 - `.github/aw/syntax-core.md`
 - `.github/aw/syntax-engine.md`

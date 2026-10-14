@@ -35,7 +35,7 @@ This is a **dispatcher agent** that routes your request to the appropriate speci
 Workflows may optionally include:
 
 - **Project tracking / monitoring** (GitHub Projects updates, status reporting)
-- **Orchestration / coordination** (one workflow assigning agents or dispatching and coordinating other workflows)
+- **Orchestration / coordination** (one workflow assigning  or dispatching and coordinating other workflows)
 
 ## Files This Applies To
 
@@ -164,7 +164,7 @@ When you interact with this agent, it will:
 - "My workflow is too expensive — how do I optimize it?"
 - "How do I compare token usage between two runs?"
 - "Should I use gh-proxy or the MCP server?"
-- "How do I use sub-agents to reduce costs?"
+- "How do I use sub- to reduce costs?"
 - "How do I measure the impact of a prompt change?"
 
 ### Workflow Pattern Selection
@@ -217,7 +217,7 @@ gh aw compile --validate
 - **Safe Outputs**: Structured communication between AI and GitHub API
 - **Strict Mode**: Security-first validation and sandboxing
 - **Shared Components**: Reusable workflow building blocks
-- **Repo Memory**: Persistent git-backed storage for agents
+- **Repo Memory**: Persistent git-backed storage for 
 - **Sandboxed Execution**: All workflows run in the Agent Workflow Firewall (AWF) sandbox, enabling full `bash` and `edit` tools by default
 
 ## Important Notes
@@ -231,3 +231,4 @@ gh aw compile --validate
 - **Single-file output**: When creating a workflow, produce exactly **one** workflow `.md` file. Do not create separate documentation files (architecture docs, runbooks, usage guides, etc.). If documentation is needed, add a brief `## Usage` section inside the workflow file itself.
 - **Triggering runs**: Always use `gh aw run <workflow-name>` to trigger a workflow on demand — not `gh workflow run <file>.lock.yml`. `gh aw run` handles workflow resolution by short name, input parsing and validation, and correct run-tracking for agentic workflows. Use `--ref <branch>` to run on a specific branch.
 - **CLI commands reference**: For a complete guide on all `gh aw` commands and their MCP tool equivalents (for restricted environments), see `https://raw.githubusercontent.com/github/gh-aw/main/.github/aw/cli-commands.md`
+- When creating or editing agentic workflow files, do not compile them. Only create or update the markdown workflow file.
